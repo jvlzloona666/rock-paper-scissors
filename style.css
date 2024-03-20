@@ -1,25 +1,46 @@
 body {
     font-family: 'Space Grotesk', sans-serif;
-    background-color: #B2BEB5;
+    background-color: #dfdfdf;
 }
 
-
-.warning-box {
+.title-card {
     display: flex;
     flex-direction: column;
-    background-color: #f8d7da;
     align-items: center;
-    margin: 30vh;
-    padding: 5vh;
+    color: black;
+    margin-bottom: 7vh;
+    margin-top: 10vh;
+    font-size: 36px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: blueviolet;
+    color: white;
+    width: 80vh;
+    height: 30vh;
     border-radius: 36px;
+    gap: 5vh;
 }
 
-.warning {
-    display: flex;
-    flex-direction: column;
-    background-color: #A9A9A9;
-    align-items: center;
-    border-radius: 72px;
-    padding: 5vh;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+.choices {
+    background-color: rgb(183, 107, 255);
+    padding: 4vh;
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+}
+
+.results {
+    font-size: 24px;
 }

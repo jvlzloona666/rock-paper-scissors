@@ -22,7 +22,8 @@ function computerPick(pick) {
 }
 
 function playRound(computerSelection) {
-    let answer = prompt("Rock, paper or scissors?").toLowerCase();
+    let answer = document.getElementById('rock');
+    console.log(answer);
     let y;
     switch(answer) {
         case "rock":
