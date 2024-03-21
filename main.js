@@ -113,11 +113,33 @@ function computerPick(pick) {
 
 function main() {
     getPlayerChoice(function(player) {
+       
+
         let computer = getComputerChoice();
         computerPick(computer);
         playRound(computer, player);
+        if (playerScore === 5 || computerScore === 5) {
+            let headerMessage = document.getElementById('header'); 
+            let buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.disabled = true;
+                
+            });
+            if ([playerScore === 5 || computerScore === 5]) {
+                if (playerScore === 5) {
+                    headerMessage.innerHTML = "You win the game!";
+                } else {
+                    headerMessage.innerHTML = "You lose the game!";
+                }
+            }
+        }
+
+        
     });
+
 }
+
+   
 
 
 
